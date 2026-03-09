@@ -3,44 +3,32 @@
 ## AIM
 To develop a convolutional deep neural network (CNN) for image classification and to verify the response for new images.
 
-##   PROBLEM STATEMENT AND DATASET
-Include the Problem Statement and Dataset.
-
-## Neural Network Model
-Include the neural network model diagram.
 
 ## DESIGN STEPS
-### STEP 1: 
+STEP 1:
+Import the required libraries (torch, torchvision, torch.nn, torch.optim) and load the image dataset with necessary preprocessing like normalization and transformation.
 
-Write your own steps
+STEP 2:
+Split the dataset into training and testing sets and create DataLoader objects to feed images in batches to the CNN model.
 
-### STEP 2: 
+STEP 3:
+Define the CNN architecture using convolutional layers, ReLU activation, max pooling layers, and fully connected layers as implemented in the CNNClassifier class.
 
+STEP 4:
+Initialize the model, define the loss function (CrossEntropyLoss), and choose the optimizer (Adam) for training the network.
 
+STEP 5:
+Train the model using the training dataset by performing forward pass, computing loss, backpropagation, and updating weights for multiple epochs.
 
-### STEP 3: 
-
-
-
-### STEP 4: 
-
-
-
-### STEP 5: 
-
-
-
-### STEP 6: 
-
-
-
-
+STEP 6:
+Evaluate the trained model on test images and verify the classification accuracy for new unseen images.
 
 ## PROGRAM
 
-### Name:
 
-### Register Number:
+### Name: ISHWARYA R
+
+### Register Number: 212224220039
 
 ```python
 class CNNClassifier(nn.Module):
